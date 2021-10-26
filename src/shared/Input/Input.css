@@ -1,0 +1,35 @@
+div.AppInput {
+  height: 45px;
+  margin: 5px auto;
+}
+
+div.AppInput label {
+  display: flex;
+  flex-direction: column;
+}
+
+div.AppInput label span {
+  text-transform: uppercase;
+  color: #09f;
+  font-size: .8em;
+  height: 15px;
+  letter-spacing: .75px;
+}
+
+div.AppInput label input {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  border-radius: 0;
+  height: 30px;
+  color: #222;
+  padding: 2px;
+}
+
+div.AppInput label input:focus {
+  border-color: #09f;
+  outline: none;
+}
+
+div.AppInput label input::placeholder {
+  color: #ccc;
+}
