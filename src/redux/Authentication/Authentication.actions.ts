@@ -17,3 +17,8 @@ export const login =
       payload: loggedInUser
     })
   }
+
+export const logout = 
+  () => ({
+    type: 'AUTHENTICATION_LOGOUT'
+  })

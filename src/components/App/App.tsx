@@ -1,7 +1,7 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import './App.css';
-import HomeView from '../../views/HomeView'
+import ProductsView from '../../views/ProductsView'
 import LoginView from '../../views/LoginView'
 import ProfileView from '../../views/ProfileView'
 import NotFoundView from '../../views/NotFoundView'
@@ -10,7 +10,8 @@ const App = () => {
   return <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<HomeView />} />
+          <Route path='/' element={<Navigate replace to='/products' />}/>
+          <Route path='/products' element={<ProductsView />} />
           <Route path='/login' element={<LoginView />} />
           <Route path='/profile' element={<ProfileView />} />
           <Route path='*' element={<NotFoundView />}/>

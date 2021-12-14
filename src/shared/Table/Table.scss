@@ -44,5 +44,41 @@ table.AppTable {
       margin-right: 5px;
     }
   }
+}
 
+.Table__pagination {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 7px;
+
+  a {
+    width: 25px;
+    height: 25px;
+    background-color: #FFF;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #09f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 12px;
+    &:not(:last-child) {
+      margin-right: 5px;
+    }
+    &:hover {
+      background-color: #09f;
+      color: #FFF;
+      border-color: #09f;
+      box-shadow: 0 3px 6px rgb(#000, .2);
+      transform: translateY(-3px);
+    }
+
+    /* &.active {
+      color: #222;
+      opacity: 0.5;
+      cursor: default;
+      pointer-events: none;
+    } */
+  }
 }
